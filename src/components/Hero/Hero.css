@@ -1,0 +1,75 @@
+/* src/components/Hero/Hero.css */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  padding: 100px 0 50px;
+}
+
+.hero .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 50px;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  color: var(--dark);
+  margin-bottom: 10px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.hero-content h2 {
+  font-size: 2rem;
+  color: var(--primary);
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  color: var(--gray);
+  margin-bottom: 30px;
+  line-height: 1.6;
+  max-width: 500px;
+}
+
+.hero-image {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.hero-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.hero-image:hover img {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .hero .container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 30px;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-content h2 {
+    font-size: 1.5rem;
+  }
+  
+  .hero-image img {
+    height: 300px;
+  }
+}

@@ -1,0 +1,47 @@
+/* src/components/RecommendedDestination/RecommendedDestination.css */
+.recommended-destination {
+  background: white;
+}
+
+.discount-banner {
+  background: linear-gradient(135deg, var(--primary), #1e40af);
+  color: white;
+  padding: 50px 40px;
+  border-radius: 15px;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.discount-banner h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.discount-banner p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  opacity: 0.9;
+}
+
+.discount-banner .btn {
+  background: white;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.discount-banner .btn:hover {
+  background: #f1f5f9;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .discount-banner {
+    padding: 40px 20px;
+  }
+  
+  .discount-banner h3 {
+    font-size: 1.5rem;
+  }
+}

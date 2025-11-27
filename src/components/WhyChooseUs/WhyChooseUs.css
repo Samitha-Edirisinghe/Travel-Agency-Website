@@ -1,0 +1,24 @@
+/* src/components/WhyChooseUs/WhyChooseUs.css */
+.why-choose-us {
+  background: var(--light);
+}
+
+.travel-corner {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.travel-corner h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.travel-corner p {
+  font-size: 1.1rem;
+  color: var(--gray);
+  line-height: 1.7;
+}
